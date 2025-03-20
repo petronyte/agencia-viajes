@@ -9,12 +9,7 @@ Este es el proyecto final desarrollado para el módulo de Programación de Servi
 - [Requisitos](#requisitos)
 - [Tecnologías](#tecnologías)
 - [Ejecución del Proyecto](#ejecución-del-proyecto)
-- [Endpoints Principales](#endpoints-principales)
-- [Pruebas y Uso](#pruebas-y-uso)
-- [Despliegue](#despliegue)
-- [Documentación y Presentación](#documentación-y-presentación)
-- [Autores](#autores)
-- [Licencia](#licencia)
+- [Autor](#autor)
 
 ## Características
 
@@ -78,12 +73,16 @@ Los microservicios se comunican mediante peticiones HTTP y se integran mediante 
 - **Maven**.
 - (Opcional) **Docker** y **Kubernetes** para despliegue en producción.
 
-**Iniciar los Microservicios**
+### Iniciar los Microservicios
 **Cada microservicio se ejecuta en un puerto distinto:**
 
-- Eureka Server: http://localhost:8761
-- API Gateway: http://localhost:8080
-- Hoteles Service: http://localhost:8081
-- Vuelos Service: http://localhost:8082
-- Reservas Service: http://localhost:8083
-- Security Service: http://localhost:8084
+- Eureka Server: *http://localhost:8761*
+- API Gateway: *http://localhost:8080*
+- Hoteles Service: *http://localhost:8081*
+- Vuelos Service: *http://localhost:8082*
+- Reservas Service: *http://localhost:8083*
+- Security Service: *http://localhost:8084*
+
+## Autor
+
+*Valdo Durán Petronyte*
