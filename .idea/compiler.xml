@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="api-gateway" />
+        <module name="hoteles-service" />
+        <module name="eureka-server" />
+        <module name="vuelos-service" />
+        <module name="security-service" />
+      </profile>
+      <profile name="Annotation profile for reservas-service" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar" />
+        </processorPath>
+        <module name="reservas-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ApiGateway" target="17" />
+      <module name="Clientes" target="17" />
+      <module name="Estancia" target="17" />
+      <module name="EurekaServer" target="17" />
+      <module name="Reservas" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ApiGateway" options="-parameters" />
+      <module name="Clientes" options="-parameters" />
+      <module name="Estancia" options="-parameters" />
+      <module name="EurekaServer" options="-parameters" />
+      <module name="Reservas" options="-parameters" />
+      <module name="api-gateway" options="-parameters" />
+      <module name="eureka-server" options="-parameters" />
+      <module name="hoteles-service" options="-parameters" />
+      <module name="reservas-service" options="-parameters" />
+      <module name="security-service" options="-parameters" />
+      <module name="vuelos-service" options="-parameters" />
+    </option>
+  </component>
+</project>
