@@ -1,6 +1,6 @@
 # Sistema de Reservas de una Agencia de Viajes
 
-Este es el proyecto final desarrollado para el curso de PSP del 2º DAM del IES Antonio Gala. La aplicación se basa en una arquitectura de microservicios que permite gestionar reservas de vuelos y hoteles de forma independiente, escalable y segura.
+Este es el proyecto final desarrollado para el módulo de Programación de Servicios y Procesos de 2º DAM. La aplicación se basa en una arquitectura de microservicios que permite gestionar reservas de vuelos y hoteles de forma independiente, escalable y segura.
 
 ## Tabla de Contenidos
 
