@@ -78,37 +78,12 @@ Los microservicios se comunican mediante peticiones HTTP y se integran mediante 
 - **Maven**.
 - (Opcional) **Docker** y **Kubernetes** para despliegue en producción.
 
-### Configuración de la Base de Datos
+Iniciar los Microservicios
+Cada microservicio se ejecuta en un puerto distinto:
 
-Ejecuta el siguiente script en tu MySQL para crear la base de datos y las tablas necesarias (ya se han creado manualmente según nuestro dump):
-
-```sql
--- Crear la base de datos
-CREATE DATABASE security_db;
-
-USE security_db;
-
--- Tabla roles
-CREATE TABLE roles (
-  rol VARCHAR(255) NOT NULL,
-  user VARCHAR(50) NOT NULL,
-  username VARCHAR(255) NOT NULL,
-  role VARCHAR(255) NOT NULL,
-  PRIMARY KEY (rol),
-  KEY fk_role_user (user)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
--- Tabla users
-CREATE TABLE users (
-  user VARCHAR(50) NOT NULL,
-  pwd VARCHAR(255) NOT NULL,
-  enabled BIT(1) NOT NULL,
-  username VARCHAR(255) NOT NULL,
-  password VARCHAR(255) NOT NULL,
-  PRIMARY KEY (user),
-  UNIQUE KEY UK_username (username)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
--- Establecer la relación entre roles y users
-ALTER TABLE roles
-  ADD CONSTRAINT fk_role_user FOREIGN KEY (user) REFERENCES users (user);
+Eureka Server: http://localhost:8761
+API Gateway: http://localhost:8080
+Hoteles Service: http://localhost:8081
+Vuelos Service: http://localhost:8082
+Reservas Service: http://localhost:8083
+Security Service: http://localhost:8084
