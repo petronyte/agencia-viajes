@@ -78,12 +78,12 @@ Los microservicios se comunican mediante peticiones HTTP y se integran mediante 
 - **Maven**.
 - (Opcional) **Docker** y **Kubernetes** para despliegue en producción.
 
-Iniciar los Microservicios
-Cada microservicio se ejecuta en un puerto distinto:
+**Iniciar los Microservicios**
+**Cada microservicio se ejecuta en un puerto distinto:**
 
-Eureka Server: http://localhost:8761
-API Gateway: http://localhost:8080
-Hoteles Service: http://localhost:8081
-Vuelos Service: http://localhost:8082
-Reservas Service: http://localhost:8083
-Security Service: http://localhost:8084
+- Eureka Server: http://localhost:8761
+- API Gateway: http://localhost:8080
+- Hoteles Service: http://localhost:8081
+- Vuelos Service: http://localhost:8082
+- Reservas Service: http://localhost:8083
+- Security Service: http://localhost:8084
